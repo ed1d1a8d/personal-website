@@ -1,0 +1,9 @@
+baseurl: "https://terveisin.tw/"
+languageCode: "en-us"
+title: "t. TW"
+
+# See https://gohugo.io/getting-started/configuration-markup/ for details
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
