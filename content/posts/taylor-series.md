@@ -1,7 +1,7 @@
 ---
 title: "An easy derivation of Taylor expansions"
 date: 2021-02-28T13:29:29-08:00
-draft: true
+draft: false
 toc: false
 images:
 tags:
