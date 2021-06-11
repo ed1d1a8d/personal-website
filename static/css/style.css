@@ -7,7 +7,11 @@ body {
 
 /* header and footer areas */
 .menu { padding: 0; }
-.menu li { display: inline-block; }
+.menu li {
+  display: inline-block;
+  padding-left: 3px;
+  padding-right: 3px;
+}
 .article-meta, .menu a {
   text-decoration: none;
   background: #eee;
