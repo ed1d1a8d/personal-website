@@ -2,5 +2,8 @@
 title: About this site
 ---
 
-TODO: This about page.
-- Comment on where theme is from (zen).
+This site is built using Hugo
+and its style is adapted from [XMin](https://archive.is/wip/zUOOu).
+
+The site is served off of Github Pages.
+You can find its git repo [here](https://github.com/ed1d1a8d/long-site/).
