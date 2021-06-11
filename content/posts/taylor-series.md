@@ -99,11 +99,10 @@ Some comments on this identity:
 - $f^{(n)}$ denotes the $n$-th derivative of $f$. So $f^{(0)} = f$, $f^{(1)} = f'$, $f^{(2)} = f''$, and so on.
 - $R_{f,c,n}$ is the remainder you get when you approximate $f$ about a base point $c$ with a $n$-th order Taylor expansion. If $f^{(n + 1)} = 0$, then $R_{f,c,n} = 0$.
 - This identity is known as **Taylor's theorem**.
-- Click to expand for a proof of the identity.
-
+- {{% expand "Click to expand for a proof of the identity." %}}
     ---
 
-    First, one technical note. In order for Taylor's theorem to hold, we must be able to take enough derivatives of $f$. For Taylor's theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.
+    First, a technical note. In order for Taylor's theorem to hold, we must be able to take enough derivatives of $f$. For Taylor's theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.
 
     ---
 
@@ -132,6 +131,7 @@ Some comments on this identity:
     $$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\\,(x-c)^k\\,\\,+\\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1.$$
 
     By induction, Taylor's theorem holds for all $n$. $\square$
+  {{% /expand %}}
 
 # Application: approximating sine
 
