@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20001102//EN" "svg-20001102.dtd">
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg">
+	
+<desc>Produced by GNUPLOT 4.0 patchlevel 0 </desc>
+
+<defs>
+
+
+	<circle id="gpDot" r="1"/>
+	<path id="gpPt0" style="stroke-width:0.056" d="M-1,0 h2 M0,-1 v2"/>
+	<path id="gpPt1" style="stroke-width:0.056" d="M-1,-1 L1,1 M1,-1 L-1,1"/>
+	<path id="gpPt2" style="stroke-width:0.056" d="M-1,0 L1,0 M0,-1 L0,1 M-1,-1 L1,1 M-1,1 L1,-1"/>
+	<rect id="gpPt3" style="stroke-width:0.056" x="-1" y="-1" width="2" height="2"/>
+	<use xlink:href="#gpPt3" id="gpPt4" style="fill:currentColor; stroke:none"/>
+	<circle id="gpPt5" style="stroke-width:0.056" cx="0" cy="0" r="1"/>
+	<use xlink:href="#gpPt5" id="gpPt6" style="fill:currentColor; stroke:none"/>
+	<path id="gpPt7" style="stroke-width:0.056" d="M0,-1.33 L-1.33,0.67 L1.33,0.67 z"/>
+	<use xlink:href="#gpPt7" id="gpPt8" style="fill:currentColor; stroke:none"/>
+	<use xlink:href="#gpPt7" id="gpPt9" transform="rotate(180)"/>
+	<use xlink:href="#gpPt9" id="gpPt10" style="fill:currentColor; stroke:none"/>
+	<use xlink:href="#gpPt3" id="gpPt11" transform="rotate(45)"/>
+	<use xlink:href="#gpPt11" id="gpPt12" style="fill:currentColor; stroke:none"/>
+</defs>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00">
+	<path d="M800,0 L764,0 M800,0 L836,0 "/>
+	<g transform="translate(767,18)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,120 L764,120 M800,120 L836,120 "/>
+	<g transform="translate(767,138)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,240 L764,240 M800,240 L836,240 "/>
+	<g transform="translate(767,258)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,360 L764,360 M800,360 L836,360 "/>
+	<g transform="translate(767,378)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,480 L764,480 M800,480 L836,480 "/>
+	<g transform="translate(767,498)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,720 L764,720 M800,720 L836,720 "/>
+	<g transform="translate(767,738)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,840 L764,840 M800,840 L836,840 "/>
+	<g transform="translate(767,858)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,960 L764,960 M800,960 L836,960 "/>
+	<g transform="translate(767,978)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,1080 L764,1080 M800,1080 L836,1080 "/>
+	<g transform="translate(767,1098)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M800,1200 L764,1200 M800,1200 L836,1200 "/>
+	<g transform="translate(767,1218)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text/>
+	</g>
+	<path d="M1333,600 L1333,636 M1333,600 L1333,564 "/>
+	<g transform="translate(1333,726)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:middle">
+		<text>2π</text>
+	</g>
+	<path d="M1067,600 L1067,636 M1067,600 L1067,564 "/>
+	<g transform="translate(1067,726)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:middle">
+		<text>π</text>
+	</g>
+	<path d="M533,600 L533,636 M533,600 L533,564 "/>
+	<g transform="translate(533,726)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:middle">
+		<text>-π</text>
+	</g>
+	<path d="M267,600 L267,636 M267,600 L267,564 "/>
+	<g transform="translate(267,726)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:middle">
+		<text>-2π</text>
+	</g>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:4.00">
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:4.00">
+	<path d="M0,600 L1600,600 M800,1200 L800,0 "/>
+</g>
+<g style="fill:none; color:gray; stroke:currentColor; stroke-width:1.00">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:1.00">
+	<path d="M1135,180 L1135,36 L1567,36 L1567,180 L1135,180 M1135,36 L1567,36 "/>
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:4.00">
+</g>
+<g style="fill:none; color:#8989D8; stroke:currentColor; stroke-width:4.00">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:4.00">
+	<g transform="translate(1333,90)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text>sin(x)</text>
+	</g>
+</g>
+<g style="fill:none; color:#8989D8; stroke:currentColor; stroke-width:4.00">
+	<path d="M1366,72 L1534,72 M0,600 L8,611 L16,623 L24,634 L32,644 L40,655 L48,665 L56,674    L64,682 L72,690 L80,697 L88,704 L96,709 L105,713 L113,716 L121,719 L129,720 L137,720    L145,719 L153,717 L161,714 L169,710 L177,705 L185,699 L193,692 L201,684 L209,675 L217,666    L225,656 L233,646 L241,635 L249,624 L257,613 L265,602 L273,591 L281,579 L289,568 L297,557    L306,547 L314,537 L322,528 L330,519 L338,511 L346,504 L354,497 L362,492 L370,487 L378,484    L386,482 L394,480 L402,480 L410,481 L418,483 L426,486 L434,490 L442,495 L450,500 L458,507    L466,515 L474,523 L482,532 L490,542 L498,552 L507,563 L515,574 L523,585 L531,596 L539,608    L547,619 L555,630 L563,641 L571,651 L579,661 L587,671 L595,680 L603,688 L611,695 L619,702    L627,707 L635,712 L643,715 L651,718 L659,720 L667,720 L675,719 L683,718 L691,715 L699,711    L708,706 L716,701 L724,694 L732,687 L740,678 L748,669 L756,660 L764,650 L772,639 L780,628    L788,617 L796,606 L804,594 L812,583 L820,572 L828,561 L836,550 L844,540 L852,531 L860,522    L868,513 L876,506 L884,499 L892,494 L901,489 L909,485 L917,482 L925,481 L933,480 L941,480    L949,482 L957,485 L965,488 L973,493 L981,498 L989,505 L997,512 L1005,520 L1013,529 L1021,539    L1029,549 L1037,559 L1045,570 L1053,581 L1061,592 L1069,604 L1077,615 L1085,626 L1093,637 L1102,648    L1110,658 L1118,668 L1126,677 L1134,685 L1142,693 L1150,700 L1158,705 L1166,710 L1174,714 L1182,717    L1190,719 L1198,720 L1206,720 L1214,718 L1222,716 L1230,713 L1238,708 L1246,703 L1254,696 L1262,689    L1270,681 L1278,672 L1286,663 L1294,653 L1303,643 L1311,632 L1319,621 L1327,609 L1335,598 L1343,587    L1351,576 L1359,565 L1367,554 L1375,544 L1383,534 L1391,525 L1399,516 L1407,508 L1415,501 L1423,495    L1431,490 L1439,486 L1447,483 L1455,481 L1463,480 L1471,480 L1479,481 L1487,484 L1495,487 L1504,491    L1512,496 L1520,503 L1528,510 L1536,518 L1544,526 L1552,535 L1560,545 L1568,556 L1576,566 L1584,577    L1592,589 L1600,600 "/>
+</g>
+<g style="fill:none; color:#ffa2ff; stroke:currentColor; stroke-width:4.00">
+</g>
+<g style="fill:none; color:black; stroke:currentColor; stroke-width:4.00">
+	<g transform="translate(1333,162)" style="stroke:none; fill:black; font-family:Times New Roman; font-size:48pt; text-anchor:end">
+		<text>f(x)</text>
+	</g>
+</g>
+<g style="fill:none; color:#ffa2ff; stroke:currentColor; stroke-width:4.00">
+	<path d="M1366,144 L1534,144 M379,0 L386,61 L394,125 L402,181 L410,230 L418,273 L426,312 L434,345    L442,376 L450,403 L458,428 L466,450 L474,471 L482,490 L490,508 L498,526 L507,542 L515,557    L523,572 L531,586 L539,600 L547,613 L555,626 L563,638 L571,649 L579,660 L587,670 L595,679    L603,687 L611,695 L619,701 L627,707 L635,712 L643,715 L651,718 L659,720 L667,720 L675,719    L683,718 L691,715 L699,711 L708,706 L716,701 L724,694 L732,687 L740,678 L748,669 L756,660    L764,650 L772,639 L780,628 L788,617 L796,606 L804,594 L812,583 L820,572 L828,561 L836,550    L844,540 L852,531 L860,522 L868,513 L876,506 L884,499 L892,494 L901,489 L909,485 L917,482    L925,481 L933,480 L941,480 L949,482 L957,485 L965,488 L973,493 L981,499 L989,505 L997,513    L1005,521 L1013,530 L1021,540 L1029,551 L1037,562 L1045,574 L1053,587 L1061,600 L1069,614 L1077,628    L1085,643 L1093,658 L1102,674 L1110,692 L1118,710 L1126,729 L1134,750 L1142,772 L1150,797 L1158,824    L1166,855 L1174,888 L1182,927 L1190,970 L1198,1019 L1206,1075 L1214,1139 L1221,1200 "/>
+</g>
+</svg>
