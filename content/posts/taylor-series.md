@@ -1,5 +1,6 @@
 ---
-title: "An easy derivation of Taylor expansions"
+title: "Taylor expansions: An easy derivation"
+subtitle: Repeatedly use the fundamental theorem of calculus to get Taylor expansions.
 date: 2021-02-28T13:29:29-08:00
 draft: false
 toc: false
@@ -7,8 +8,6 @@ images:
 tags:
   - math
 ---
-
-**TL;DR Repeatedly use the fundamental theorem of calculus to get Taylor expansions.**
 
 # Introduction
 
@@ -20,7 +19,10 @@ So, I decided to re-derive Taylor expansions in a way I can finally remember. Th
 
 To remember Taylor expansions, all you need to remember is the **fundamental theorem of calculus (FTC)**. If you repeatedly apply the FTC, the Taylor expansion will emerge.
 
-The FTC says that given function $f: \mathbb{R} \to \mathbb{R}$ and a base point $c \in \mathbb{R}$, the value of $f$ at a point $x \in \mathbb{R}$ is given by
+The FTC says that for a function
+$f: \mathbb{R} \to \mathbb{R}$
+and a base point $c \in \mathbb{R}$,
+the value of $f$ at a point $x \in \mathbb{R}$ is given by
 
 $$f(x) = f(c) + \int_{c}^x f'(t)\\, dt.$$
 
@@ -99,7 +101,7 @@ Some comments on this identity:
 - $f^{(n)}$ denotes the $n$-th derivative of $f$. So $f^{(0)} = f$, $f^{(1)} = f'$, $f^{(2)} = f''$, and so on.
 - $R_{f,c,n}$ is the remainder you get when you approximate $f$ about a base point $c$ with a $n$-th order Taylor expansion. If $f^{(n + 1)} = 0$, then $R_{f,c,n} = 0$.
 - This identity is known as **Taylor's theorem**.
-- {{% expand "Click to expand for a proof of the identity." %}}
+- {{% expand "A proof of the identity (click to expand)." %}}
     ---
 
     First, a technical note. In order for Taylor's theorem to hold, we must be able to take enough derivatives of $f$. For Taylor's theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.
@@ -172,4 +174,4 @@ Thank you for reading and I hope you can better remember Taylor remainders in th
 
 ### Acknowledgements
 
-Thanks Elton Lin and Horace He for reading a drafts of this post.
+Thanks to Elton Lin and Horace He for reading a drafts of this post.

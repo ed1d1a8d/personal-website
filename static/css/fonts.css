@@ -1,8 +1,9 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  font-size: 1.2em;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif;
 }
-
+.singledate {
+  font-family: "Lucida Console", Monaco, monospace;
+}
 code {
   font-family: "Lucida Console", Monaco, monospace;
   font-size: 85%;

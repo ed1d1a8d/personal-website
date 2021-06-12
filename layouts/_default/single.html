@@ -1,10 +1,12 @@
 {{ define "main" }}
+<!-- For single pages (e.g. about, blog posts) -->
 
-<!-- The single template -->
-<div class="article-meta">
-  <h1><span class="title">{{ .Title | markdownify }}</span></h1>
-  {{ if (gt .Params.date 0) }}<h2 class="date">{{ .Date.Format "2006-01-02" }}</h2>{{ end }}
-</div>
+<h1>{{ .Title | markdownify }}</h1>
+{{ if (gt .Params.date 0) }}
+  <p>
+    {{ .Date.Format "2006-01-02" }} | {{ .Params.subtitle | markdownify }}
+  </p>
+{{ end }}
 
 <content>
   {{ .Content }}
