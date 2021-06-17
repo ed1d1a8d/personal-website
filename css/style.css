@@ -43,7 +43,7 @@ content figure img {
   margin: 0 auto;
 }
 content figure figcaption {
-  color: rgba(55, 53, 47, 0.6);
+  color: rgba(55, 53, 47, 0.6); /* same as Notion */
 }
 
 /* code */
