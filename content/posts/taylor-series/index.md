@@ -158,9 +158,12 @@ How tight is this bound? Well the actual maximum of $R_{\sin, 0, 8}$ over $[-\fr
 
 Here is a plot of sine and our 8th order expansion:
 
-![Taylor approximation to sine.](taylor-sine.svg)
-
-Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is [from the Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=825819).
+{{<
+    figure
+    src="taylor-sine.svg"
+    width="400px"
+    caption="Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is [from the Wikimedia Commons](https://commons.wikimedia.org/w/index.php?curid=825819)."
+>}}
 
 # Final thoughts
 

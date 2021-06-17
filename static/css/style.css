@@ -34,6 +34,17 @@ content {
 }
 content h1 { font-size: 1.5em; }
 content h2 { font-size: 1.17em; }
+content figure {
+  margin-top: 25pt;
+  margin-bottom: 25pt;
+}
+content figure img {
+  display: block;
+  margin: 0 auto;
+}
+content figure figcaption {
+  color: rgba(55, 53, 47, 0.6); /* same as Notion */
+}
 
 /* code */
 pre {
