@@ -1,1 +1,3 @@
+archetypes/**/*.md linguist-detectable
 content/**/*.md linguist-detectable
+*.yaml linguist-detectable
