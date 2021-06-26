@@ -30,57 +30,53 @@ This is "fundamental" because it relates the two key ideas of calculus, derivati
 
 How do we get Taylor expansions from the FTC? It goes like this.
 
----
+0. To begin, assume $f' = 0$. Then apply the FTC and simplify:
 
-To begin, assume $f' = 0$. Then apply the FTC and simplify:
+    $$
+    \begin{align*}
+    f(x)
+    &= f(c) + \int_{c}^x f'(t)\\, dt \\\\
+    &= f(c) + \int_{c}^x 0\\, dt \\\\
+    &= f(c).
+    \end{align*}
+    $$
 
-$$
-\begin{align*}
-f(x)
-&= f(c) + \int_{c}^x f'(t)\\, dt \\\\
-&= f(c) + \int_{c}^x 0\\, dt \\\\
-&= f(c).
-\end{align*}
-$$
+    This yields a **zeroth order Taylor expansion**, which approximates $f$ with a constant function based at $c$.
 
-This yields a **zeroth order Taylor expansion**, which approximates $f$ with a constant function based at $c$.
+1. Now assume $f'' = 0$. Then apply the FTC twice and simplify:
 
----
+    $$
+    \begin{align*}
+    f(x)
+    &= f(c) + \int_c^x f'(t_1)\\, dt_1 \\\\
+    &= f(c) + \int_c^x \left[ \\, f'(c) + \int_c^{t_1}  f''(t_2)\\, dt_2 \right] dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} f'' (t_2) \\, dt_2 \\, dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} 0   \\, dt_2 \\, dt_1 \\\\
+    &= f(c) + f'(c) (x - c).
+    \end{align*}
+    $$
 
-Now assume $f'' = 0$. Then apply the FTC twice and simplify:
+    We first applied the FTC to $f$ in the first line, then to $f'$ in the second line.
 
-$$
-\begin{align*}
-f(x)
-&= f(c) + \int_c^x f'(t_1)\\, dt_1 \\\\
-&= f(c) + \int_c^x \left[ \\, f'(c) + \int_c^{t_1} f''(t_2)\\, dt_2 \right] dt_1 \\\\
-&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} f''(t_2) \\, dt_2 \\, dt_1 \\\\
-&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} 0 \\, dt_2 \\, dt_1 \\\\
-&= f(c) + f'(c) (x - c).
-\end{align*}
-$$
+    This yields a **first order Taylor expansion**, which approximates $f$ with a linear function based at $c$.
 
-We first applied the FTC to $f$ in the first line, then to $f'$ in the second line.
+2. One more. Assume $f''' = 0$ and apply the FTC three times:
 
-This yields a **first order Taylor expansion**, which approximates $f$ with a linear function based at $c$.
+    $$\begin{align*}
+    f(x)
+    &= f(c) + \int_c^x f'(t_1)\\, dt_1 \\\\
+    &= f(c) + \int_c^x \left[ \\, f'(c) + \int_c^{t_1} f''(t_2)\\, dt_2\right] dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} f''(t_2) \\, dt_2 \\, dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} \left[ \\, f''(c) + \int_c^{t_2} f'''(t_3) \\, dt_3 \right] dt_2 \\, dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} f'''(t_3) \\, dt_3 \\, dt_2 \\, dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} 0 \\, dt_3 \\, dt_2 \\, dt_1 \\\\
+    &= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2}.
+    \end{align*}
+    $$
 
----
+    This yields a ______ order Taylor expansion, which approximates $f$ with a quadratic function based at $c$.
 
-One more. Assume $f''' = 0$ and apply the FTC three times:
-
-$$\begin{align*}
-f(x)
-&= f(c) + \int_c^x f'(t_1)\\, dt_1 \\\\
-&= f(c) + \int_c^x \left[ \\, f'(c) + \int_c^{t_1} f''(t_2)\\, dt_2\right] dt_1 \\\\
-&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} f''(t_2) \\, dt_2 \\, dt_1 \\\\
-&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} \left[ \\, f''(c) + \int_c^{t_2} f'''(t_3) \\, dt_3 \right] dt_2 \\, dt_1 \\\\
-&= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} f'''(t_3) \\, dt_3 \\, dt_2 \\, dt_1 \\\\
-&= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} 0 \\, dt_3 \\, dt_2 \\, dt_1 \\\\
-&= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2}.
-\end{align*}
-$$
-
-This yields a ______ order Taylor expansion, which approximates $f$ with a quadratic function based at $c$. I'll let you fill in the blank.
+    I'll let you fill in the blank.
 
 # Taylor expansions: general form
 
@@ -103,8 +99,6 @@ Some comments on this identity:
     ---
 
     First, a technical note. In order for Taylor's theorem to hold, we must be able to take enough derivatives of $f$. For Taylor's theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.
-
-    ---
 
     Now onto the proof.
 
@@ -131,6 +125,9 @@ Some comments on this identity:
     $$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\\,(x-c)^k\\,\\,+\\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1.$$
 
     By induction, Taylor's theorem holds for all $n$. $\square$
+
+    ---
+
   {{% /expand %}}
 
 # Application: approximating sine
