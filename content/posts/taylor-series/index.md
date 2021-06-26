@@ -84,7 +84,7 @@ If we continue to above procedure, we get the general form of a $n$-th order Tay
 
 $$
 \begin{align*}
-f(x) &=  f(c) + f'(c) (x-c) + f''(c) \frac{(x - c)^2}{2} + \cdots + \frac{f^{n}(c)}{n!}\\, (x-c)^n + R_{f,c,n}(x) \\\\
+f(x) &=  f(c) + f'(c) (x-c) + f''(c) \frac{(x - c)^2}{2} + \cdots + \frac{f^{(n)}(c)}{n!}\\, (x-c)^n + R_{f,c,n}(x) \\\\
 &= \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\\,(x-c)^k + R_{f,c,n}(x), \\\\
 R_{f,c,n}(x) &\triangleq \int_{c}^x \int_c^{t_1} \int_c^{t_2} \cdots \int_c^{t_{n}}  f^{(n+1)}(t_{n+1}) \\, dt_{n+1} \cdots dt_2\\,dt_1.
 \end{align*}
@@ -122,9 +122,9 @@ Some comments on this identity:
 
     We have shown that
 
-    $$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\\,(x-c)^k\\,\\,+\\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1.$$
+    $$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\\,(x-c)^k\\,\\,+\\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1,$$
 
-    By induction, Taylor's theorem holds for all $n$. $\square$
+    so by induction, Taylor's theorem holds for all $n$. $\square$
 
     ---
 
