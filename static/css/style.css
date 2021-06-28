@@ -4,6 +4,7 @@
   --body-padding: 1.5rem;
   --body-to-sidenote-dist: 5rem;
   --sidenote-width: 18rem;
+  --clickable-color: #007bff;
 }
 
 body {
@@ -66,6 +67,11 @@ content figure figcaption {
   color: rgba(55, 53, 47, 0.6); /* same as Notion */
 }
 
+/* details summary */
+content summary::marker {
+  color: var(--clickable-color);
+}
+
 /* code */
 pre {
   border: 1px solid #ddd;
@@ -99,7 +105,7 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 
 /* Sidenotes inspired by https://danilafe.com/blog/sidenotes/ */
 .sidenote-label {
-  color: #007bff;
+  color: var(--clickable-color);
 }
 
 .sidenote-content {

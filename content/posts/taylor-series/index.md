@@ -102,40 +102,40 @@ Some comments on this identity:
 - $f^{(n)}$ denotes the $n$-th derivative of $f$. So $f^{(0)} = f$, $f^{(1)} = f'$, $f^{(2)} = f''$, and so on.
 - $R_{f,c,n}$ is the remainder you get when you approximate $f$ about a base point $c$ with a $n$-th order Taylor expansion. If $f^{(n + 1)} = 0$, then $R_{f,c,n} = 0$.
 - This identity is known as **Taylor's theorem**.
-- {{% expand "A proof of the identity (click to expand)." %}}
-    ---
+{{% expand "A proof of the identity (click to expand)." %}}
+---
 
-    First, a technical note. In order for Taylor's theorem to hold, we must be able to take enough derivatives of $f$. For Taylor's theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.
+First, a technical note. In order for Taylor's theorem to hold, we must be able to take enough derivatives of $f$. For Taylor's theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.
 
-    Now onto the proof.
+Now onto the proof.
 
-    We've already proven Taylor's theorem for $n = 0, 1, 2$.
+We've already proven Taylor's theorem for $n = 0, 1, 2$.
 
-    To prove the theorem for arbitrary $n$, we use induction. Assume Taylor's theorem holds up to $n$-th order, and let $f: \mathbb{R} \to \mathbb{R}$ be $(n+2)$-times continuously differentiable. This means $f^{(n+1)}$ is continuously differentiable, so
+To prove the theorem for arbitrary $n$, we use induction. Assume Taylor's theorem holds up to $n$-th order, and let $f: \mathbb{R} \to \mathbb{R}$ be $(n+2)$-times continuously differentiable. This means $f^{(n+1)}$ is continuously differentiable, so
 
-    $$
-    \begin{align*}
-    & f(x) - \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\\,(x-c)^k \\\\
-    &= \int_{0}^x \int_0^{t_1} \cdots \int_0^{t_n}  f^{(n+1)}(t_{n+1}) \\, dt_{n+1} \cdots \\,dt_1 \\\\
-    &= \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \\, f^{(n+1)}(c) + \int_{c}^{t_{n+1}} f^{(n+2)}(t_{n+2})\\, dt_{n+2} \right] \\, dt_{n+1} \cdots \\,dt_1 \\\\
-    &= \frac{f^{(n+1)}(c)}{(n+1)!}\\,(x-c)^{(n+1)}\\,\\, +\\, \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1.
-    \end{align*}
-    $$
+$$
+\begin{align*}
+& f(x) - \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\\,(x-c)^k \\\\
+&= \int_{0}^x \int_0^{t_1} \cdots \int_0^{t_n}  f^{(n+1)}(t_{n+1}) \\, dt_{n+1} \cdots \\,dt_1 \\\\
+&= \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \\, f^{(n+1)}(c) + \int_{c}^{t_{n+1}} f^{(n+2)}(t_{n+2})\\, dt_{n+2} \right] \\, dt_{n+1} \cdots \\,dt_1 \\\\
+&= \frac{f^{(n+1)}(c)}{(n+1)!}\\,(x-c)^{(n+1)}\\,\\, +\\, \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1.
+\end{align*}
+$$
 
-    To get the last line, we used the identity
+To get the last line, we used the identity
 
-    $$\int_c^x \int_c^{t_1} \cdots \int_c^{t_n}  1 \\, dt_{n+1} \cdots \\,dt_1
-    = \frac{(x-c)^{(n+1)}}{(n+1)!}.$$
+$$\int_c^x \int_c^{t_1} \cdots \int_c^{t_n}  1 \\, dt_{n+1} \cdots \\,dt_1
+= \frac{(x-c)^{(n+1)}}{(n+1)!}.$$
 
-    We have shown that
+We have shown that
 
-    $$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\\,(x-c)^k\\,\\,+\\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1,$$
+$$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\\,(x-c)^k\\,\\,+\\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}}  f^{(n+2)}(t_{n+2}) \\, dt_{n+2} \cdots \\,dt_1,$$
 
-    so by induction, Taylor's theorem holds for all $n$. $\square$
+so by induction, Taylor's theorem holds for all $n$. $\square$
 
-    ---
+---
 
-  {{% /expand %}}
+{{% /expand %}}
 
 # Application: approximating sine
 
