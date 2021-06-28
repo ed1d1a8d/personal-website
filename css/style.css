@@ -1,8 +1,23 @@
+:root {
+  --wide-left-gap: 5rem;
+  --body-max-width: 44rem;
+  --body-padding: 1.5rem;
+  --body-to-sidenote-dist: 5rem;
+  --sidenote-width: 18rem;
+}
+
 body {
-  max-width: 800px;
+  max-width: var(--body-max-width);
+  padding: var(--body-padding);
   margin: auto;
-  padding: 1em;
+  margin-left: calc(var(--wide-left-gap) - var(--body-padding));
   line-height: 1.5em;
+  font-family: Optima, Candara, Calibri, Arial, sans-serif;
+}
+
+/* body-width + 2 * wide-left-gap */
+@media screen and (max-width: 54rem) {
+  body { margin: auto }
 }
 
 /* header and footer areas */
@@ -28,12 +43,17 @@ hr {
   color: #ddd;
 }
 
-/* content */
-content {
-  hyphens: auto;
+/* title */
+.single-title {
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: -0.33em;
 }
-content h1 { font-size: 1.5em; }
-content h2 { font-size: 1.17em; }
+
+/* content */
+content { hyphens: auto; }
+content h1 { font-size: 1.5em; margin-bottom: -0.25em; }
+content h2 { font-size: 1.17em; margin-bottom: -0.5em; }
 content figure {
   margin-top: 25pt;
   margin-bottom: 25pt;
@@ -53,7 +73,11 @@ pre {
   padding: 1em;
   overflow-x: auto;
 }
-code { background: #f9f9f9; }
+code {
+  background: #f9f9f9;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 85%;
+}
 pre code { background: none; }
 
 /* misc elements */
@@ -72,3 +96,50 @@ table {
 table thead th { border-bottom: 1px solid #ddd; }
 th, td { padding: 5px; }
 thead, tfoot, tr:nth-child(even) { background: #eee; }
+
+/* Sidenotes inspired by https://danilafe.com/blog/sidenotes/ */
+.sidenote-label {
+  color: #007bff;
+}
+
+.sidenote-content {
+  display: block;
+  position: absolute;
+  width: var(--sidenote-width);
+  margin-top: -1.5rem;
+  text-align: left;
+  font-size: 90%;
+}
+
+.sidenote-content {
+  right: 0;
+  margin-right: calc(
+    100vw
+    - var(--wide-left-gap)
+    - var(--body-max-width)
+    - var(--body-to-sidenote-dist)
+    - var(--sidenote-width)
+  );
+}
+
+.sidenote .sidenote-checkbox {
+  display: none;
+}
+
+/* Inline sidenotes when screen is too small */
+/* wide-left-gap + body-max-width + body-to-sidenote-dist + sidenote-width */
+@media screen and (max-width: 72rem) {
+  .sidenote-content {
+    position: static;
+    margin: auto;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    width: 80%;
+    justify-content: center;
+    display: none;
+  }
+
+  .sidenote .sidenote-checkbox:checked ~ .sidenote-content {
+    display: block;
+  }
+}
