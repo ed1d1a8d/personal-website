@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- For single pages (e.g. about, blog posts) -->
 
-<h1>{{ .Title | markdownify }}</h1>
+<h1 class=single-title>{{ .Title | markdownify }}</h1>
 {{ if (gt .Params.date 0) }}
   <p>
     {{ .Date.Format "2006-01-02" }} | {{ .Params.subtitle | markdownify }}

@@ -9,3 +9,6 @@ To create a new post
 ```
 TODO.
 ```
+
+### Hugo tricks
+`{{- "" -}}` removes whitespace caused by newlines in html.

@@ -1,0 +1,11 @@
+<!-- Sidenotes inspired by https://danilafe.com/blog/sidenotes/ -->
+{{- "" -}}
+<span class="sidenote">
+  {{- "" -}}
+  <sup><label class="sidenote-label" for="sidenote-1">1</label></sup>
+  <input class="sidenote-checkbox" type="checkbox" id="sidenote-1"></input>
+  <span class="sidenote-content">
+    <sup class="sidenote-label">1</sup>
+    {{.Inner | safeHTML}}
+  </span>
+</span>

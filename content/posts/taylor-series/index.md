@@ -17,10 +17,17 @@ So, I decided to re-derive Taylor expansions in a way I can finally remember. Th
 
 To remember Taylor expansions, all you need to remember is the **fundamental theorem of calculus (FTC)**. If you repeatedly apply the FTC, the Taylor expansion will emerge.
 
-The FTC says that for a function
+The FTC says that for a function{{< sidenote >}}
+    To be precise,
+    for the FTC to hold $f$ needs to have a derivative $f'$
+    that is sufficiently well behaved.
+    For example,
+    it suffices for $f'$ to be continuous.
+{{< /sidenote >}}
 $f: \mathbb{R} \to \mathbb{R}$
 and a base point $c \in \mathbb{R}$,
-the value of $f$ at a point $x \in \mathbb{R}$ is given by
+the value of $f$ at a point $x \in \mathbb{R}$
+is given by
 
 $$f(x) = f(c) + \int_{c}^x f'(t)\\, dt.$$
 
@@ -170,6 +177,6 @@ Finally, the differentiability conditions presented in this post are stronger th
 
 Thank you for reading and I hope you can better remember Taylor remainders in the future!
 
-### Acknowledgements
+## Acknowledgements
 
 Thanks to Elton Lin and Horace He for reading a drafts of this post.
