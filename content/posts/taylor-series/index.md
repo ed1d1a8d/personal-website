@@ -9,9 +9,16 @@ tags:
 
 # Introduction
 
-Recently I had to bound the error in a Taylor expansion. However I forgot the form of the error term, so I had to look it up. This was not the first time I've had to look it up. In fact, though I first learned about Taylor expansions in 2014, for the past 7 years I have never been able to remember the remainder formula.
+Recently I had to bound the error in a Taylor expansion.
+However I forgot the form of the error term, so I had to look it up.
+This was not the first time I've had to look it up.
+In fact, though I first learned about Taylor expansions in 2014{{< sidenote >}}
+    Shoutout to Ms. Dartnell!
+{{< /sidenote >}},
+up till 2021 I struggled to remember the remainder formula.
 
-So, I decided to re-derive Taylor expansions in a way I can finally remember. This blogpost details the approach, which I think is pretty simple.
+This post is my attempt to
+re-derive Taylor expansions in a way I can finally remember.
 
 # Approach
 

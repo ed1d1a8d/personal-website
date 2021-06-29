@@ -2,10 +2,14 @@
 {{- "" -}}
 <span class="sidenote">
   {{- "" -}}
-  <sup><label class="sidenote-label" for="sidenote-1">1</label></sup>
-  <input class="sidenote-checkbox" type="checkbox" id="sidenote-1"></input>
+  <sup><label class="sidenote-label" for="sidenote-{{ add .Ordinal 1}}">{{add .Ordinal 1}}</label></sup>
+  {{- "" -}}
+  <input class="sidenote-checkbox" type="checkbox" id="sidenote-{{add .Ordinal 1}}"></input>
+  {{- "" -}}
   <span class="sidenote-content">
-    <sup class="sidenote-label">1</sup>
+    <sup class="sidenote-label">{{add .Ordinal 1}}</sup>
     {{.Inner | safeHTML}}
   </span>
+  {{- "" -}}
 </span>
+{{- "" -}}
