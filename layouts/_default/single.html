@@ -2,10 +2,17 @@
 <!-- For single pages (e.g. about, blog posts) -->
 
 <h1 class=single-title>{{ .Title | markdownify }}</h1>
+
+{{ if (isset .Params "subtitle") }}
+<div class="post-subtitle">
+  {{ .Params.subtitle | markdownify }}
+</div>
+{{ end }}
+
 {{ if (gt .Params.date 0) }}
-  <p>
-    {{ .Date.Format "2006-01-02" }} | {{ .Params.subtitle | markdownify }}
-  </p>
+<div class="post-date">
+  Created: {{ .Date.Format "2006-01-02" }} | Last updated: {{ .Lastmod.Format "2006-01-02" }}
+</div>
 {{ end }}
 
 <content>

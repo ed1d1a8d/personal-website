@@ -1,7 +1,8 @@
 ---
 title: "Taylor expansions: An easy derivation"
 subtitle: Repeatedly use the fundamental theorem of calculus to get Taylor expansions.
-date: 2021-02-28T13:29:29-08:00
+date: 2021-01-10
+lastmod: 2021-06-28
 draft: false
 tags:
   - math
