@@ -163,9 +163,22 @@ As a concrete example, consider the the sine function. Its infinite-order Taylor
 
 $$\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$
 
-How accurate is the Taylor expansion of sine up to 8th order in the region $[-\frac{\pi}{2}, \frac{\pi}{2}]$? Well the 9th derivative of sine is cosine, which over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ has a maximum value of $1$. Thus our 8th order expansion has error at most $(\frac{\pi}{2})^9 / 9! \approx 1.60 \times 10^{-4}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
+How accurate is the Taylor expansion of sine up to 8th order
+in the region{{< sidenote >}}
+    We could extend our expansion to
+    the entirety of $\mathbb{R}$
+    by using the symmetries of the sine function.
+{{< /sidenote >}}
+$[-\frac{\pi}{2}, \frac{\pi}{2}]$?
+Well the 9th derivative of sine is cosine, which over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ has a maximum value of $1$. Thus our 8th order expansion has error at most $(\frac{\pi}{2})^9 / 9! \approx 1.60 \times 10^{-4}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
 
-How tight is this bound? Well the actual maximum of $R_{\sin, 0, 8}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ is approximately $1.57 \times 10^{-4}$, so our bound is pretty tight!
+How tight is this bound?
+Well the actual maximum of
+$R_{\sin, 0, 8}$
+over $[-\frac{\pi}{2}, \frac{\pi}{2}]$
+is approximately
+[$\underline{1.57 \times 10^{-4}}$](https://www.wolframalpha.com/input/?i=maximize+|sin(x)+-+(x+-+x^3%2F3!+%2B+x^5%2F5!+-+x^7%2F7!)|+over+[-pi%2F2%2C+pi%2F2]),
+so our bound is pretty tight!
 
 Here is a plot of sine and our 8th order expansion:
 
