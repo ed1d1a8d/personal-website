@@ -8,7 +8,11 @@
 <ul>
   {{ range (where .Pages "Section" "!=" "") }}
   <li>
-    <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+    <span>
+      <span title="Date created.">{{ .Date.Format "2006-01-02" }}</span>
+      &mdash;
+      <span title="Date last updated.">{{ .Lastmod.Format "2006-01-02" }}</span>
+    </span>
     &emsp;
     <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
   </li>
