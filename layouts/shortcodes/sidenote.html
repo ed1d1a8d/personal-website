@@ -1,13 +1,18 @@
 <!-- Sidenotes inspired by https://danilafe.com/blog/sidenotes/ -->
 {{- "" -}}
 <span class="sidenote">
+  {{- with $.Page.Scratch.Get "sidenoteCounter" -}}
+  {{- $.Page.Scratch.Set "sidenoteCounter" (add . 1) -}}
+  {{- else -}}
+  {{- $.Page.Scratch.Set "sidenoteCounter" 1 -}}
+  {{- end -}}
+  {{- $sidenoteCounter := $.Page.Scratch.Get "sidenoteCounter" -}}
+  <sup><label class="sidenote-label" for="sidenote-{{ $sidenoteCounter }}">{{ $sidenoteCounter }}</label></sup>
   {{- "" -}}
-  <sup><label class="sidenote-label" for="sidenote-{{ add .Ordinal 1}}">{{add .Ordinal 1}}</label></sup>
-  {{- "" -}}
-  <input class="sidenote-checkbox" type="checkbox" id="sidenote-{{add .Ordinal 1}}"></input>
+  <input class="sidenote-checkbox" type="checkbox" id="sidenote-{{ $sidenoteCounter }}"></input>
   {{- "" -}}
   <span class="sidenote-content">
-    <sup class="sidenote-label">{{add .Ordinal 1}}</sup>
+    <sup class="sidenote-label">{{ $sidenoteCounter }}</sup>
     {{.Inner | safeHTML}}
   </span>
   {{- "" -}}

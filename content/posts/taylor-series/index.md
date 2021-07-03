@@ -2,7 +2,7 @@
 title: "Taylor expansions: An easy derivation"
 subtitle: Repeatedly use the fundamental theorem of calculus to get Taylor expansions.
 date: 2021-01-10
-lastmod: 2021-06-28
+lastmod: 2021-07-02
 draft: false
 tags:
   - math
@@ -130,7 +130,8 @@ $$
 \end{align*}
 $$
 
-To get the last line, we used the identity
+To get the last line,
+we used the identity{{< sidenote >}}This is the formula for the volume of a $(n + 1)$-dimensional simplex with side length $(x - c)$.{{< /sidenote >}}
 
 $$\int_c^x \int_c^{t_1} \cdots \int_c^{t_n}  1 \\, dt_{n+1} \cdots \\,dt_1
 = \frac{(x-c)^{(n+1)}}{(n+1)!}.$$
