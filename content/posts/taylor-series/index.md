@@ -11,15 +11,16 @@ tags:
 # Introduction
 
 Recently I had to bound the error in a Taylor expansion.
-However I forgot the form of the error term, so I had to look it up.
+However, I forgot the form of the error term and had to look it up.
 This was not the first time I've had to look it up.
 In fact, though I first learned about Taylor expansions in 2014{{< sidenote >}}
     Shoutout to Ms. Dartnell!
 {{< /sidenote >}},
-up till 2021 I struggled to remember the remainder formula.
+up till 2021 I struggled to remember their remainder formula.
 
 This post is my attempt to
-re-derive Taylor expansions in a way I can finally remember.
+re-derive Taylor expansions and their error term
+in a way I can finally remember.
 
 # Approach
 
@@ -191,14 +192,29 @@ Here is a plot of sine and our 8th order expansion:
 
 # Final thoughts
 
-I like this derivation of Taylor expansions because it is very easy to remember. All you have to do is repeatedly apply the fundamental theorem of calculus!
+I like this derivation of Taylor expansions because it is very easy to remember.
+All you have to do is repeatedly apply the fundamental theorem of calculus.
 
-A very similar derivation was given in this math.stackexchange answer: [https://math.stackexchange.com/a/492165/85418](https://math.stackexchange.com/a/492165/85418). In it, the author shows how to obtain the Lagrange form of Taylor's theorem via the multivariate integral form.
+The differentiability conditions presented in this post
+are stronger than necessary (see expandable proof).
+For example, it suffices for $f^{(n)}$ to be
+[absolutely continuous](https://en.wikipedia.org/wiki/Absolute_continuity)
+instead of continuously differentiable.
+Additionally, differentiability conditions only need to hold
+in the region over which we use our expansion,
+not the entirety of $\mathbb{R}$.
 
-Finally, the differentiability conditions presented in this post are stronger than necessary (see expandable proof). For example, it suffices for $f^{(n)}$ to be [absolutely continuous](https://en.wikipedia.org/wiki/Absolute_continuity) instead of continuously differentiable. Additionally, differentiability conditions only need to hold in the region over which we use our expansion, not the entirety of $\mathbb{R}$.
+Finally, here are some links to similar derivations I came across
+while working on this post:
+- [math.stackexchange.com/a/492165/85418](https://math.stackexchange.com/a/492165/85418)
+  is very similar in nature,
+  and derives the Lagrange form of Taylor's theorem via the multivariate integral form.
+- [youtu.be/y87iKV5PU24](https://youtu.be/y87iKV5PU24) is a nice video
+  derivation that uses the same idea as described here.
 
-Thank you for reading and I hope you can better remember Taylor remainders in the future!
+Thank you for reading and I hope you can better remember
+Taylor expansions and remainders in the future!
 
 ## Acknowledgements
 
-Thanks to Elton Lin and Horace He for reading a drafts of this post.
+Thanks to Elton Lin and Horace He for reading drafts of this post.
