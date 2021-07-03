@@ -1,12 +1,13 @@
 <!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Taylor expansions: An easy derivation, t. TW</title><link rel=stylesheet href=/css/style.css><script>MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script></head><body><ul class=menu><li><a href=/>Home</a></li><li><a href=/about/>About</a></li><li><a href=/posts/>Posts</a></li></ul><hr><h1 class=single-title>Taylor expansions: An easy derivation</h1><div class=post-subtitle>Repeatedly use the fundamental theorem of calculus to get Taylor expansions.</div><div class=post-date>Created: 2021-01-10 | Last updated: 2021-07-02</div><content><h1 id=introduction>Introduction</h1><p>Recently I had to bound the error in a Taylor expansion.
-However I forgot the form of the error term, so I had to look it up.
+However, I forgot the form of the error term and had to look it up.
 This was not the first time I&rsquo;ve had to look it up.
 In fact, though I first learned about Taylor expansions in 2014<span class=sidenote><sup><label class=sidenote-label for=sidenote-1>1</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-1></input><span class=sidenote-content>
 <sup class=sidenote-label>1</sup>
 Shoutout to Ms. Dartnell!
 </span></span>,
-up till 2021 I struggled to remember the remainder formula.</p><p>This post is my attempt to
-re-derive Taylor expansions in a way I can finally remember.</p><h1 id=approach>Approach</h1><p>To remember Taylor expansions, all you need to remember is the <strong>fundamental theorem of calculus (FTC)</strong>. If you repeatedly apply the FTC, the Taylor expansion will emerge.</p><p>The FTC says that for a function<span class=sidenote><sup><label class=sidenote-label for=sidenote-2>2</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-2></input><span class=sidenote-content>
+up till 2021 I struggled to remember their remainder formula.</p><p>This post is my attempt to
+re-derive Taylor expansions and their error term
+in a way I can finally remember.</p><h1 id=approach>Approach</h1><p>To remember Taylor expansions, all you need to remember is the <strong>fundamental theorem of calculus (FTC)</strong>. If you repeatedly apply the FTC, the Taylor expansion will emerge.</p><p>The FTC says that for a function<span class=sidenote><sup><label class=sidenote-label for=sidenote-2>2</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-2></input><span class=sidenote-content>
 <sup class=sidenote-label>2</sup>
 To be precise,
 for the FTC to hold $f$ needs to have a derivative $f'$
@@ -47,4 +48,30 @@ This is the formula for the volume of a $(n + 1)$-dimensional simplex with side 
 \left| R_{f,c,n}(x) \right|
 &= \left| \int_c^x \int_c^{t_1} \cdots \int_c^{t_n} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots \,dt_1 \right| \\<br>&\leq \int_c^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \max_{t \,\in\, [c, x]} \left| \, f^{(n+1)}(t)\right| \right] \, dt_{n+1} \cdots \,dt_1 \\<br>&= \frac{(x-c)^{n+1}}{(n+1)!} \cdot\,\max_{t \,\in\, [c, x]} \left| \, f^{(n+1)}(t) \right|.
 \end{align*}
-$$</p><p>As a concrete example, consider the the sine function. Its infinite-order Taylor expansion (centered at zero) is given by</p><p>$$\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$</p><p>How accurate is the Taylor expansion of sine up to 8th order in the region $[-\frac{\pi}{2}, \frac{\pi}{2}]$? Well the 9th derivative of sine is cosine, which over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ has a maximum value of $1$. Thus our 8th order expansion has error at most $(\frac{\pi}{2})^9 / 9! \approx 1.60 \times 10^{-4}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$.</p><p>How tight is this bound? Well the actual maximum of $R_{\sin, 0, 8}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ is approximately $1.57 \times 10^{-4}$, so our bound is pretty tight!</p><p>Here is a plot of sine and our 8th order expansion:</p><figure><img src=taylor-sine.svg alt="Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is from the Wikimedia Commons." width=400px><figcaption><p>Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is <a href="https://commons.wikimedia.org/w/index.php?curid=825819">from the Wikimedia Commons</a>.</p></figcaption></figure><h1 id=final-thoughts>Final thoughts</h1><p>I like this derivation of Taylor expansions because it is very easy to remember. All you have to do is repeatedly apply the fundamental theorem of calculus!</p><p>A very similar derivation was given in this math.stackexchange answer: <a href=https://math.stackexchange.com/a/492165/85418 target=_blank>https://math.stackexchange.com/a/492165/85418</a>. In it, the author shows how to obtain the Lagrange form of Taylor&rsquo;s theorem via the multivariate integral form.</p><p>Finally, the differentiability conditions presented in this post are stronger than necessary (see expandable proof). For example, it suffices for $f^{(n)}$ to be <a href=https://en.wikipedia.org/wiki/Absolute_continuity target=_blank>absolutely continuous</a> instead of continuously differentiable. Additionally, differentiability conditions only need to hold in the region over which we use our expansion, not the entirety of $\mathbb{R}$.</p><p>Thank you for reading and I hope you can better remember Taylor remainders in the future!</p><h2 id=acknowledgements>Acknowledgements</h2><p>Thanks to Elton Lin and Horace He for reading a drafts of this post.</p></content><hr></body></html>
+$$</p><p>As a concrete example, consider the the sine function. Its infinite-order Taylor expansion (centered at zero) is given by</p><p>$$\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$</p><p>How accurate is the Taylor expansion of sine up to 8th order
+in the region<span class=sidenote><sup><label class=sidenote-label for=sidenote-4>4</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-4></input><span class=sidenote-content>
+<sup class=sidenote-label>4</sup>
+We could extend our expansion to
+the entirety of $\mathbb{R}$
+by using the symmetries of the sine function.</span></span>
+$[-\frac{\pi}{2}, \frac{\pi}{2}]$?
+Well the 9th derivative of sine is cosine, which over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ has a maximum value of $1$. Thus our 8th order expansion has error at most $(\frac{\pi}{2})^9 / 9! \approx 1.60 \times 10^{-4}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$.</p><p>How tight is this bound?
+Well the actual maximum of
+$R_{\sin, 0, 8}$
+over $[-\frac{\pi}{2}, \frac{\pi}{2}]$
+is approximately
+<a href="https://www.wolframalpha.com/input/?i=maximize+%7csin%28x%29+-+%28x+-+x%5e3%2F3!+%2B+x%5e5%2F5!+-+x%5e7%2F7!%29%7c+over+[-pi%2F2%2C+pi%2F2]" target=_blank>$\underline{1.57 \times 10^{-4}}$</a>,
+so our bound is pretty tight!</p><p>Here is a plot of sine and our 8th order expansion:</p><figure><img src=taylor-sine.svg alt="Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is from the Wikimedia Commons." width=400px><figcaption><p>Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is <a href="https://commons.wikimedia.org/w/index.php?curid=825819">from the Wikimedia Commons</a>.</p></figcaption></figure><h1 id=final-thoughts>Final thoughts</h1><p>I like this derivation of Taylor expansions because it is very easy to remember.
+All you have to do is repeatedly apply the fundamental theorem of calculus.</p><p>The differentiability conditions presented in this post
+are stronger than necessary (see expandable proof).
+For example, it suffices for $f^{(n)}$ to be
+<a href=https://en.wikipedia.org/wiki/Absolute_continuity target=_blank>absolutely continuous</a>
+instead of continuously differentiable.
+Additionally, differentiability conditions only need to hold
+in the region over which we use our expansion,
+not the entirety of $\mathbb{R}$.</p><p>Finally, here are some links to similar derivations I came across
+while working on this post:</p><ul><li><a href=https://math.stackexchange.com/a/492165/85418 target=_blank>math.stackexchange.com/a/492165/85418</a>
+is very similar in nature,
+and derives the Lagrange form of Taylor&rsquo;s theorem via the multivariate integral form.</li><li><a href=https://youtu.be/y87iKV5PU24 target=_blank>youtu.be/y87iKV5PU24</a> is a nice video
+derivation that uses the same idea as described here.</li></ul><p>Thank you for reading and I hope you can better remember
+Taylor expansions and remainders in the future!</p><h2 id=acknowledgements>Acknowledgements</h2><p>Thanks to Elton Lin and Horace He for reading drafts of this post.</p></content><hr></body></html>
