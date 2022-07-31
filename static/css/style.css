@@ -67,7 +67,7 @@ content figure img {
   margin: 0 auto;
 }
 content figure figcaption {
-  color: rgba(55, 53, 47, 0.6); /* same as Notion */
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* details summary */
@@ -109,6 +109,10 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
 /* Sidenotes inspired by https://danilafe.com/blog/sidenotes/ */
 .sidenote-label {
   color: var(--clickable-color);
+
+  /* Sidenote label is normal weight and fixed size relative to root. */
+  font-weight: normal;
+  font-size: 0.7rem;
 }
 
 .sidenote-content {
@@ -117,7 +121,10 @@ thead, tfoot, tr:nth-child(even) { background: #eee; }
   width: var(--sidenote-width);
   margin-top: -1.5rem;
   text-align: left;
-  font-size: 90%;
+
+  /* Sidenote content is normal weight and fixed size relative to root. */
+  font-weight: normal;
+  font-size: 0.9rem;
 }
 
 .sidenote-content {

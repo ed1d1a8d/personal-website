@@ -13,7 +13,7 @@
   {{- "" -}}
   <span class="sidenote-content">
     <sup class="sidenote-label">{{ $sidenoteCounter }}</sup>
-    {{.Inner | safeHTML}}
+    {{.Inner | markdownify | safeHTML}}
   </span>
   {{- "" -}}
 </span>
