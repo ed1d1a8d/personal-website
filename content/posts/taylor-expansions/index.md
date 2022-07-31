@@ -14,7 +14,7 @@ Recently I had to bound the error in a Taylor expansion.
 However, I forgot the form of the error term and had to look it up.
 This was not the first time I've had to look it up.
 In fact, though I first learned about Taylor expansions in 2014{{< sidenote >}}
-    Shoutout to Ms. Dartnell!
+Shoutout to Ms. Dartnell!
 {{< /sidenote >}},
 up till 2021 I struggled to remember their remainder formula.
 
@@ -27,11 +27,11 @@ in a way I can finally remember.
 To remember Taylor expansions, all you need to remember is the **fundamental theorem of calculus (FTC)**. If you repeatedly apply the FTC, the Taylor expansion will emerge.
 
 The FTC says that for a function{{< sidenote >}}
-    To be precise,
-    for the FTC to hold $f$ needs to have a derivative $f'$
-    that is sufficiently well behaved.
-    For example,
-    it suffices for $f'$ to be continuous.
+To be precise,
+for the FTC to hold $f$ needs to have a derivative $f'$
+that is sufficiently well behaved.
+For example,
+it suffices for $f'$ to be continuous.
 {{< /sidenote >}}
 $f: \mathbb{R} \to \mathbb{R}$
 and a base point $c \in \mathbb{R}$,
@@ -166,9 +166,9 @@ $$\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$
 
 How accurate is the Taylor expansion of sine up to 8th order
 in the region{{< sidenote >}}
-    We could extend our expansion to
-    the entirety of $\mathbb{R}$
-    by using the symmetries of the sine function.
+We could extend our expansion to
+the entirety of $\mathbb{R}$
+by using the symmetries of the sine function.
 {{< /sidenote >}}
 $[-\frac{\pi}{2}, \frac{\pi}{2}]$?
 Well the 9th derivative of sine is cosine, which over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ has a maximum value of $1$. Thus our 8th order expansion has error at most $(\frac{\pi}{2})^9 / 9! \approx 1.60 \times 10^{-4}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$.
