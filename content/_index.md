@@ -1,4 +1,7 @@
-Welcome to Tony Wang's [long site](https://www.gwern.net/About#long-site).
+Welcome to Tony Wang's long site{{< sidenote >}}
+    Inspired by
+    <a href="https://www.gwern.net/About#long-site" target="_blank">Gwern</a>.
+{{< /sidenote >}}.
 
 I'm currently pursuing a PhD at MIT,
 where I spend my time thinking about
