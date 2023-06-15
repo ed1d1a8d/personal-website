@@ -5,16 +5,14 @@ Welcome to Tony Wang's long site{{< sidenote >}}
 
 I'm currently pursuing a PhD at MIT,
 where I spend my time thinking about
-AI alignment,
-the science of deep learning,
-connectomics,
-and applications of AI to bio-engineering.
+how to build friendly AGIs and connectomics.
 <!--- Also thinking nascent thoughts about human-human alignment and coordination. -->
 
 Feel free to contact me at
 twang6 [at] mit [dot] edu
 if you would like to chat about anything I've mentioned on this site.
 
-Some other links:
+Some links:
 [Twitter](https://twitter.com/5kovt),
-[Google Scholar](https://scholar.google.com/citations?user=YWiob00AAAAJ).
+[Google Scholar](https://scholar.google.com/citations?user=YWiob00AAAAJ),
+[CV](docs/tony-wang-cv.pdf).
