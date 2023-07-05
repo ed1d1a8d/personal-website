@@ -1,5 +1,4 @@
-### About
-The site is generated with Hugo.
+This site is generated with Hugo.
 On MacOS, hugo can be installed with the command `brew install hugo`.
 
 ### Commands

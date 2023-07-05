@@ -1,7 +1,8 @@
 Welcome to my long site{{< sidenote >}}
     Inspired by
     <a href="https://www.gwern.net/About#long-site" target="_blank">Gwern</a>.
-{{< /sidenote >}}. I'm currently pursuing a PhD at MIT,
+{{< /sidenote >}}.
+I'm currently pursuing a PhD at MIT,
 where I spend my time thinking about
 how to build friendly AGIs and connectomics.
 <!--- Also thinking nascent thoughts about human-human alignment and coordination. -->
