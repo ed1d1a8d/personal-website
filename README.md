@@ -1,3 +1,6 @@
+This site is generated with Hugo.
+On MacOS, hugo can be installed with the command `brew install hugo`.
+
 ### Commands
 To run a local version of the site:
 ```
