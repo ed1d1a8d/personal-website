@@ -4,23 +4,20 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>
-    {{ if .IsHome }}
-      t. TW
-    {{ else }}
-      {{ .Title }}, t. TW
-    {{ end }}
-  </title>
+
+  {{ partial "title.html" . }}
+  {{ partial "favicon.html" . }}
 
   <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
   {{ partial "mathjax.html" . }}
 </head>
 
 <body>
+  <center>Tony Wang's Personal Website</center>
   <ul class="menu">
     <li><a href="/">Home</a></li>
     <li><a href="/posts/">Posts</a></li>
-    <li><a href="/about/">About the site</a></li>
+    <li><a href="/about/">About</a></li>
   </ul>
   <hr />
 
