@@ -1,68 +1,88 @@
-<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Taylor expansions: An easy derivation</title><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=stylesheet href=/css/style.css><script>MathJax={tex:{inlineMath:[['$','$']],displayMath:[['$$','$$']]}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script></head><body><center>Tony Wang's Personal Website</center><ul class=menu><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/about/>About</a></li></ul><hr><h1 class=single-title>Taylor expansions: An easy derivation</h1><div class=post-subtitle>Repeatedly use the fundamental theorem of calculus to get Taylor expansions.</div><div class=post-date><span title="Date created.">Created: 2021-01-10</span>;
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Taylor expansions: An easy derivation
+</title><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=manifest href=/site.webmanifest><link rel=stylesheet href=/css/style.css><script>MathJax={tex:{inlineMath:[["$","$"]],displayMath:[["$$","$$"]]}}</script><script type=text/javascript id=MathJax-script async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js></script></head><body><center>Tony Wang's Personal Website</center><ul class=menu><li><a href=/>Home</a></li><li><a href=/posts/>Posts</a></li><li><a href=/about/>About</a></li></ul><hr><h1 class=single-title>Taylor expansions: An easy derivation</h1><div class=post-subtitle>Repeatedly use the fundamental theorem of calculus to get Taylor expansions.</div><div class=post-date><span title="Date created.">Created: 2021-01-10</span>;
 <span title="Date last updated.">Updated: 2021-07-02</span>.</div><content><h1 id=introduction>Introduction</h1><p>Recently I had to bound the error in a Taylor expansion.
 However, I forgot the form of the error term and had to look it up.
 This was not the first time I&rsquo;ve had to look it up.
-In fact, though I first learned about Taylor expansions in 2014<span class=sidenote><sup><label class=sidenote-label for=sidenote-1>1</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-1></input><span class=sidenote-content>
-<sup class=sidenote-label>1</sup>
+In fact, though I first learned about Taylor expansions in 2014<span class=sidenote><sup><label class=sidenote-label for=sidenote-2>2</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-2></input><span class=sidenote-content>
+<sup class=sidenote-label>2</sup>
 Shoutout to Ms. Dartnell!
 </span></span>,
 up till 2021 I struggled to remember their remainder formula.</p><p>This post is my attempt to
 re-derive Taylor expansions and their error term
-in a way I can finally remember.</p><h1 id=approach>Approach</h1><p>To remember Taylor expansions, all you need to remember is the <strong>fundamental theorem of calculus (FTC)</strong>. If you repeatedly apply the FTC, the Taylor expansion will emerge.</p><p>The FTC says that for a function<span class=sidenote><sup><label class=sidenote-label for=sidenote-2>2</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-2></input><span class=sidenote-content>
-<sup class=sidenote-label>2</sup>
+in a way I can finally remember.</p><h1 id=approach>Approach</h1><p>To remember Taylor expansions, all you need to remember is the <strong>fundamental theorem of calculus (FTC)</strong>. If you repeatedly apply the FTC, the Taylor expansion will emerge.</p><p>The FTC says that for a function<span class=sidenote><sup><label class=sidenote-label for=sidenote-3>3</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-3></input><span class=sidenote-content>
+<sup class=sidenote-label>3</sup>
 To be precise,
 for the FTC to hold $f$ needs to have a derivative $f'$
 that is sufficiently well behaved.
 For example,
-it suffices for $f'$ to be continuous.</span></span>
-$f: \mathbb{R} \to \mathbb{R}$
+it suffices for $f'$ to be continuous.
+</span></span>$f: \mathbb{R} \to \mathbb{R}$
 and a base point $c \in \mathbb{R}$,
 the value of $f$ at a point $x \in \mathbb{R}$
-is given by</p><p>$$f(x) = f(c) + \int_{c}^x f'(t)\, dt.$$</p><p>This is &ldquo;fundamental&rdquo; because it relates the two key ideas of calculus, derivatives and integrals, and says they are inverses of each other.</p><h1 id=taylor-expansions-from-the-ftc>Taylor expansions from the FTC</h1><p>How do we get Taylor expansions from the FTC? It goes like this.</p><ol start=0><li><p>To begin, assume $f' = 0$. Then apply the FTC and simplify:</p><p>$$
+is given by</p><p>$$f(x) = f(c) + \int_{c}^x f&rsquo;(t)\, dt.$$</p><p>This is &ldquo;fundamental&rdquo; because it relates the two key ideas of calculus, derivatives and integrals, and says they are inverses of each other.</p><h1 id=taylor-expansions-from-the-ftc>Taylor expansions from the FTC</h1><p>How do we get Taylor expansions from the FTC? It goes like this.</p><ol start=0><li><p>To begin, assume $f&rsquo; = 0$. Then apply the FTC and simplify:</p><p>$$
 \begin{align*}
 f(x)
-&= f(c) + \int_{c}^x f'(t)\, dt \\<br>&= f(c) + \int_{c}^x 0\, dt \\<br>&= f(c).
+&= f(c) + \int_{c}^x f&rsquo;(t)\, dt \\
+&= f(c) + \int_{c}^x 0\, dt \\
+&= f(c).
 \end{align*}
-$$</p><p>This yields a <strong>zeroth order Taylor expansion</strong>, which approximates $f$ with a constant function based at $c$.</p></li><li><p>Now assume $f'' = 0$. Then apply the FTC twice and simplify:</p><p>$$
+$$</p><p>This yields a <strong>zeroth order Taylor expansion</strong>, which approximates $f$ with a constant function based at $c$.</p></li><li><p>Now assume $f&rsquo;&rsquo; = 0$. Then apply the FTC twice and simplify:</p><p>$$
 \begin{align*}
 f(x)
-&= f(c) + \int_c^x f'(t_1)\, dt_1 \\<br>&= f(c) + \int_c^x \left[ \, f'(c) + \int_c^{t_1} f''(t_2)\, dt_2 \right] dt_1 \\<br>&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} f'' (t_2) \, dt_2 \, dt_1 \\<br>&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} 0 \, dt_2 \, dt_1 \\<br>&= f(c) + f'(c) (x - c).
+&= f(c) + \int_c^x f&rsquo;(t_1)\, dt_1 \\
+&= f(c) + \int_c^x \left[ \, f&rsquo;(c) + \int_c^{t_1} f&rsquo;&rsquo;(t_2)\, dt_2 \right] dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + \int_c^x \int_c^{t_1} f&rsquo;&rsquo; (t_2) \, dt_2 \, dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + \int_c^x \int_c^{t_1} 0 \, dt_2 \, dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c).
 \end{align*}
-$$</p><p>We first applied the FTC to $f$ in the first line, then to $f'$ in the second line.</p><p>This yields a <strong>first order Taylor expansion</strong>, which approximates $f$ with a linear function based at $c$.</p></li><li><p>One more. Assume $f''' = 0$ and apply the FTC three times:</p><p>$$\begin{align*}
+$$</p><p>We first applied the FTC to $f$ in the first line, then to $f&rsquo;$ in the second line.</p><p>This yields a <strong>first order Taylor expansion</strong>, which approximates $f$ with a linear function based at $c$.</p></li><li><p>One more. Assume $f&rsquo;&rsquo;&rsquo; = 0$ and apply the FTC three times:</p><p>$$\begin{align*}
 f(x)
-&= f(c) + \int_c^x f'(t_1)\, dt_1 \\<br>&= f(c) + \int_c^x \left[ \, f'(c) + \int_c^{t_1} f''(t_2)\, dt_2\right] dt_1 \\<br>&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} f''(t_2) \, dt_2 \, dt_1 \\<br>&= f(c) + f'(c) (x - c) + \int_c^x \int_c^{t_1} \left[ \, f''(c) + \int_c^{t_2} f'''(t_3) \, dt_3 \right] dt_2 \, dt_1 \\<br>&= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} f'''(t_3) \, dt_3 \, dt_2 \, dt_1 \\<br>&= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} 0 \, dt_3 \, dt_2 \, dt_1 \\<br>&= f(c) + f'(c) (x - c) + f''(c) \frac{(x - c)^2}{2}.
+&= f(c) + \int_c^x f&rsquo;(t_1)\, dt_1 \\
+&= f(c) + \int_c^x \left[ \, f&rsquo;(c) + \int_c^{t_1} f&rsquo;&rsquo;(t_2)\, dt_2\right] dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + \int_c^x \int_c^{t_1} f&rsquo;&rsquo;(t_2) \, dt_2 \, dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + \int_c^x \int_c^{t_1} \left[ \, f&rsquo;&rsquo;(c) + \int_c^{t_2} f&rsquo;&rsquo;&rsquo;(t_3) \, dt_3 \right] dt_2 \, dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + f&rsquo;&rsquo;(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} f&rsquo;&rsquo;&rsquo;(t_3) \, dt_3 \, dt_2 \, dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + f&rsquo;&rsquo;(c) \frac{(x - c)^2}{2} + \int_c^x \int_c^{t_1} \int_c^{t_2} 0 \, dt_3 \, dt_2 \, dt_1 \\
+&= f(c) + f&rsquo;(c) (x - c) + f&rsquo;&rsquo;(c) \frac{(x - c)^2}{2}.
 \end{align*}
 $$</p><p>This yields a ______ order Taylor expansion, which approximates $f$ with a quadratic function based at $c$.</p><p>I&rsquo;ll let you fill in the blank.</p></li></ol><h1 id=taylor-expansions-general-form>Taylor expansions: general form</h1><p>If we continue to above procedure, we get the general form of a $n$-th order Taylor expansion:</p><p>$$
 \begin{align*}
-f(x) &= f(c) + f'(c) (x-c) + f''(c) \frac{(x - c)^2}{2} + \cdots + \frac{f^{(n)}(c)}{n!}\, (x-c)^n + R_{f,c,n}(x) \\<br>&= \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\,(x-c)^k + R_{f,c,n}(x), \\<br>R_{f,c,n}(x) &\triangleq \int_{c}^x \int_c^{t_1} \int_c^{t_2} \cdots \int_c^{t_{n}} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots dt_2\,dt_1.
+f(x) &= f(c) + f&rsquo;(c) (x-c) + f&rsquo;&rsquo;(c) \frac{(x - c)^2}{2} + \cdots + \frac{f^{(n)}(c)}{n!}\, (x-c)^n + R_{f,c,n}(x) \\
+&= \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\,(x-c)^k + R_{f,c,n}(x), \\
+R_{f,c,n}(x) &\triangleq \int_{c}^x \int_c^{t_1} \int_c^{t_2} \cdots \int_c^{t_{n}} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots dt_2\,dt_1.
 \end{align*}
-$$</p><p>Some comments on this identity:</p><ul><li>$f^{(n)}$ denotes the $n$-th derivative of $f$. So $f^{(0)} = f$, $f^{(1)} = f'$, $f^{(2)} = f''$, and so on.</li><li>$R_{f,c,n}$ is the remainder you get when you approximate $f$ about a base point $c$ with a $n$-th order Taylor expansion. If $f^{(n + 1)} = 0$, then $R_{f,c,n} = 0$.</li><li>This identity is known as <strong>Taylor&rsquo;s theorem</strong>.</li></ul><details><summary>A proof of the identity (click to expand).</summary><div><hr><p>First, a technical note. In order for Taylor&rsquo;s theorem to hold, we must be able to take enough derivatives of $f$. For Taylor&rsquo;s theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.</p><p>Now onto the proof.</p><p>We&rsquo;ve already proven Taylor&rsquo;s theorem for $n = 0, 1, 2$.</p><p>To prove the theorem for arbitrary $n$, we use induction. Assume Taylor&rsquo;s theorem holds up to $n$-th order, and let $f: \mathbb{R} \to \mathbb{R}$ be $(n+2)$-times continuously differentiable. This means $f^{(n+1)}$ is continuously differentiable, so</p><p>$$
+$$</p><p>Some comments on this identity:</p><ul><li>$f^{(n)}$ denotes the $n$-th derivative of $f$. So $f^{(0)} = f$, $f^{(1)} = f&rsquo;$, $f^{(2)} = f&rsquo;&rsquo;$, and so on.</li><li>$R_{f,c,n}$ is the remainder you get when you approximate $f$ about a base point $c$ with a $n$-th order Taylor expansion. If $f^{(n + 1)} = 0$, then $R_{f,c,n} = 0$.</li><li>This identity is known as <strong>Taylor&rsquo;s theorem</strong>.</li></ul><details><summary>A proof of the identity (click to expand).</summary><div><hr><p>First, a technical note. In order for Taylor&rsquo;s theorem to hold, we must be able to take enough derivatives of $f$. For Taylor&rsquo;s theorem to hold up to $n$-th order, one sufficient condition is for $f^{(n + 1)}$ to exist and be continuous.</p><p>Now onto the proof.</p><p>We&rsquo;ve already proven Taylor&rsquo;s theorem for $n = 0, 1, 2$.</p><p>To prove the theorem for arbitrary $n$, we use induction. Assume Taylor&rsquo;s theorem holds up to $n$-th order, and let $f: \mathbb{R} \to \mathbb{R}$ be $(n+2)$-times continuously differentiable. This means $f^{(n+1)}$ is continuously differentiable, so</p><p>$$
 \begin{align*}
-& f(x) - \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\,(x-c)^k \\<br>&= \int_{0}^x \int_0^{t_1} \cdots \int_0^{t_n} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots \,dt_1 \\<br>&= \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \, f^{(n+1)}(c) + \int_{c}^{t_{n+1}} f^{(n+2)}(t_{n+2})\, dt_{n+2} \right] \, dt_{n+1} \cdots \,dt_1 \\<br>&= \frac{f^{(n+1)}(c)}{(n+1)!}\,(x-c)^{(n+1)}\,\, +\, \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_{n+1}} f^{(n+2)}(t_{n+2}) \, dt_{n+2} \cdots \,dt_1.
+& f(x) - \sum_{k=0}^n \frac{f^{(k)}(c)}{k!}\,(x-c)^k \\
+&= \int_{0}^x \int_0^{t_1} \cdots \int_0^{t_n} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots \,dt_1 \\
+&= \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \, f^{(n+1)}(c) + \int_{c}^{t_{n+1}} f^{(n+2)}(t_{n+2})\, dt_{n+2} \right] \, dt_{n+1} \cdots \,dt_1 \\
+&= \frac{f^{(n+1)}(c)}{(n+1)!}\,(x-c)^{(n+1)}\,\, +\, \int_{c}^x \int_c^{t_1} \cdots \int_c^{t_{n+1}} f^{(n+2)}(t_{n+2}) \, dt_{n+2} \cdots \,dt_1.
 \end{align*}
 $$</p><p>To get the last line,
-we used the identity<span class=sidenote><sup><label class=sidenote-label for=sidenote-3>3</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-3></input><span class=sidenote-content>
-<sup class=sidenote-label>3</sup>
+we used the identity<span class=sidenote><sup><label class=sidenote-label for=sidenote-1>1</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-1></input><span class=sidenote-content>
+<sup class=sidenote-label>1</sup>
 This is the formula for the volume of a $(n + 1)$-dimensional simplex with side length $(x - c)$.</span></span></p><p>$$\int_c^x \int_c^{t_1} \cdots \int_c^{t_n} 1 \, dt_{n+1} \cdots \,dt_1
 = \frac{(x-c)^{(n+1)}}{(n+1)!}.$$</p><p>We have shown that</p><p>$$f(x) = \sum_{k=0}^{n+1} \frac{f^{(k)}(c)}{k!}\,(x-c)^k\,\,+\, \int_c^x \int_c^{t_1} \cdots \int_c^{t_{n+1}} f^{(n+2)}(t_{n+2}) \, dt_{n+2} \cdots \,dt_1,$$</p><p>so by induction, Taylor&rsquo;s theorem holds for all $n$. $\square$</p><hr></div></details><h1 id=application-approximating-sine>Application: approximating sine</h1><p>The general form of Taylor&rsquo;s theorem is useful for bounding the error of a Taylor expansion. In particular, if we can bound $f^{(n + 1)}$, then we can bound $R_{f,c,n}(x)$. A coarse bound is the following:</p><p>$$
 \begin{align*}
 \left| R_{f,c,n}(x) \right|
-&= \left| \int_c^x \int_c^{t_1} \cdots \int_c^{t_n} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots \,dt_1 \right| \\<br>&\leq \int_c^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \max_{t \,\in\, [c, x]} \left| \, f^{(n+1)}(t)\right| \right] \, dt_{n+1} \cdots \,dt_1 \\<br>&= \frac{(x-c)^{n+1}}{(n+1)!} \cdot\,\max_{t \,\in\, [c, x]} \left| \, f^{(n+1)}(t) \right|.
+&= \left| \int_c^x \int_c^{t_1} \cdots \int_c^{t_n} f^{(n+1)}(t_{n+1}) \, dt_{n+1} \cdots \,dt_1 \right| \\
+&\leq \int_c^x \int_c^{t_1} \cdots \int_c^{t_n} \left[ \max_{t \,\in\, [c, x]} \left| \, f^{(n+1)}(t)\right| \right] \, dt_{n+1} \cdots \,dt_1 \\
+&= \frac{(x-c)^{n+1}}{(n+1)!} \cdot\,\max_{t \,\in\, [c, x]} \left| \, f^{(n+1)}(t) \right|.
 \end{align*}
 $$</p><p>As a concrete example, consider the the sine function. Its infinite-order Taylor expansion (centered at zero) is given by</p><p>$$\sin(x) = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + \cdots$$</p><p>How accurate is the Taylor expansion of sine up to 8th order
 in the region<span class=sidenote><sup><label class=sidenote-label for=sidenote-4>4</label></sup><input class=sidenote-checkbox type=checkbox id=sidenote-4></input><span class=sidenote-content>
 <sup class=sidenote-label>4</sup>
 We could extend our expansion to
 the entirety of $\mathbb{R}$
-by using the symmetries of the sine function.</span></span>
-$[-\frac{\pi}{2}, \frac{\pi}{2}]$?
+by using the symmetries of the sine function.
+</span></span>$[-\frac{\pi}{2}, \frac{\pi}{2}]$?
 Well the 9th derivative of sine is cosine, which over $[-\frac{\pi}{2}, \frac{\pi}{2}]$ has a maximum value of $1$. Thus our 8th order expansion has error at most $(\frac{\pi}{2})^9 / 9! \approx 1.60 \times 10^{-4}$ over $[-\frac{\pi}{2}, \frac{\pi}{2}]$.</p><p>How tight is this bound?
 Well the actual maximum of
 $R_{\sin, 0, 8}$
 over $[-\frac{\pi}{2}, \frac{\pi}{2}]$
 is approximately
 <a href="https://www.wolframalpha.com/input/?i=maximize+%7csin%28x%29+-+%28x+-+x%5e3%2F3!+%2B+x%5e5%2F5!+-+x%5e7%2F7!%29%7c+over+[-pi%2F2%2C+pi%2F2]" target=_blank>$\underline{1.57 \times 10^{-4}}$</a>,
-so our bound is pretty tight!</p><p>Here is a plot of sine and our 8th order expansion:</p><figure><img src=taylor-sine.svg alt="Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is from the Wikimedia Commons." width=400px><figcaption><p>Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is <a href="https://commons.wikimedia.org/w/index.php?curid=825819">from the Wikimedia Commons</a>.</p></figcaption></figure><h1 id=final-thoughts>Final thoughts</h1><p>I like this derivation of Taylor expansions because it is very easy to remember.
+so our bound is pretty tight!</p><p>Here is a plot of sine and our 8th order expansion:</p><figure><img src=taylor-sine.svg alt="Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is from the Wikimedia Commons." width=400px><figcaption><p>Sine and its 8th order Taylor expansion about zero. The expansion is very good close to zero, and very bad far away from zero. Image is <a href="https://commons.wikimedia.org/w/index.php?curid=825819" target=_blank>from the Wikimedia Commons</a>.</p></figcaption></figure><h1 id=final-thoughts>Final thoughts</h1><p>I like this derivation of Taylor expansions because it is very easy to remember.
 All you have to do is repeatedly apply the fundamental theorem of calculus.</p><p>The differentiability conditions presented in this post
 are stronger than necessary (see expandable proof).
 For example, it suffices for $f^{(n)}$ to be
