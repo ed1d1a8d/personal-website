@@ -1,11 +1,5 @@
-Welcome to my long site{{< sidenote >}}
-    Inspired by
-    <a href="https://www.gwern.net/About#long-site" target="_blank">Gwern</a>.
-{{< /sidenote >}}.
-I'm currently pursuing a PhD at MIT,
-where I spend my time thinking about
-how to build friendly AGIs and connectomics.
-<!--- Also thinking nascent thoughts about human-human alignment and coordination. -->
+Welcome to my personal website.
+I'm currently pursuing a PhD at MIT, where I spend my time thinking about how humanity can build friendly AGIs (without greatly harming itself in its attempt to do so).
 
 Feel free to contact me at
 twang6 [at] mit [dot] edu

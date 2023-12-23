@@ -11,9 +11,8 @@
 
 {{ if (gt .Params.date 0) }}
 <div class="post-date">
-  <span title="Date created.">{{ .Date.Format "2006-01-02" }}</span>
-  &mdash;
-  <span title="Date last updated.">{{ .Lastmod.Format "2006-01-02" }}</span>.
+  <span title="Date created.">Created: {{ .Date.Format "2006-01-02" }}</span>;
+  <span title="Date last updated.">Updated: {{ .Lastmod.Format "2006-01-02" }}</span>.
 </div>
 {{ end }}
 
