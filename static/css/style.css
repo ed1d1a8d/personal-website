@@ -14,6 +14,7 @@ body {
   margin-left: calc(var(--wide-left-gap) - var(--body-padding));
   line-height: 1.5em;
   font-family: Optima, Candara, Calibri, Arial, sans-serif;
+  text-align: justify;
 }
 
 /* body-width + 2 * wide-left-gap */
