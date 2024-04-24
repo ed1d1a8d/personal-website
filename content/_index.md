@@ -1,5 +1,5 @@
 Welcome to my personal website.
-I'm a 3rd year PhD student at MIT under the supervision of Nir Shavit. I mostly spend my time thinking about how humanity can build friendly AGIs without greatly harming itself in its attempt to do so.
+I'm a 3rd year PhD student at MIT under the supervision of Nir Shavit. I mostly spend my time thinking about how humanity can achieve the upsides of AGI without greatly harming itself in its attempt to do so.
 
 ### Research Interests
 
