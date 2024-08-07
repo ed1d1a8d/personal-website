@@ -1,9 +1,11 @@
 Welcome to my personal website.
-I'm a 3rd year PhD student at MIT under the supervision of Nir Shavit. I mostly spend my time thinking about how humanity can achieve the upsides of AGI without greatly harming itself in its attempt to do so.
+I am currently at the US AI Safety Institute on leave from my PhD at MIT.
+At the safety institute, I work on the design, implementation, execution, and analysis of frontier model evaluations.
+The overall goal of my work and research is to enable humanity to realize the benefits of AGI while adequately managing its risks.
 
 ### Research Interests
 
-Much of my previous work and thinking has been on adversarial robustness. I've thought about the phenomenon both in [very simplified toy settings](https://dspace.mit.edu/handle/1721.1/139041) as well as in the setting of [superhuman game-playing agents](https://arxiv.org/abs/2211.00241). I'm interested in adversarial robustness for two key reasons:
+Much of my previous work and thinking has been on adversarial robustness. I've thought about the phenomenon both in [simplified toy settings](https://dspace.mit.edu/handle/1721.1/139041) as well as in the setting of [superhuman game-playing agents](https://arxiv.org/abs/2211.00241). I'm interested in adversarial robustness for two key reasons:
 
 - Adversarial robustness is very closely related to the worst-case performance of a system. Safe systems are ones which by definition have acceptable worst-case performance, so adversarial methods can serve as both a good auditing mechanism and as a training signal for safety.
 
@@ -17,10 +19,10 @@ At the moment, I'm working on robustness in both the vision and language domains
 
 <p style="text-align: center;"><b>What are the core difficulties with preventing jailbreaks in language models,<br>and how can these difficulties be overcome?</b></p>
 
-My current take is that the answer involves scalable oversight and possibly [relaxed adversarial training](https://www.alignmentforum.org/posts/atBQ3NHyqnBadrsGP/latent-adversarial-training).
+My current take is that the answer involves scalable oversight, and techniques like [relaxed adversarial training](https://www.alignmentforum.org/posts/atBQ3NHyqnBadrsGP/latent-adversarial-training), [representation engineering](https://arxiv.org/abs/2406.04313) and [stateful defenses](https://arxiv.org/abs/1907.05587).
 
-A north star for my research agenda is to develop techniques that could let us
-reliably instill Asimov's three laws into future AGI systems.
+A north star for my research is to develop techniques that could let us
+reliably instill Asimov's laws (at least the first two) into AGI systems.
 
 ### Contact
 
@@ -29,6 +31,6 @@ feel free to contact me at
 twang6 [at] mit [dot] edu.
 
 Some links:
-[Twitter](https://twitter.com/5kovt),
+[Twitter](https://twitter.com/TonyWangIV),
 [Google Scholar](https://scholar.google.com/citations?user=YWiob00AAAAJ),
 [CV](docs/tony-wang-cv.pdf).
