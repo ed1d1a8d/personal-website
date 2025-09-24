@@ -4,7 +4,7 @@ On MacOS, hugo can be installed with the command `brew install hugo`.
 ### Commands
 To run a local version of the site:
 ```
-hugo server -v -D --disableFastRender --minify
+hugo server -D --disableFastRender --minify
 ```
 We use minify locally to make local builds more similar to production.
 
