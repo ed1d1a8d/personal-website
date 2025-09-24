@@ -1,2 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>t. TW</title><link>https://tonytwang.net/</link><description>Recent content on t. TW</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 10 Jan 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tonytwang.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Taylor expansions: An easy derivation</title><link>https://tonytwang.net/writing/taylor-expansions/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>https://tonytwang.net/writing/taylor-expansions/</guid><description>Introduction Recently I had to bound the error in a Taylor expansion. However, I forgot the form of the error term and had to look it up. This was not the first time I&amp;rsquo;ve had to look it up. In fact, though I first learned about Taylor expansions in 20142 2 Shoutout to Ms. Dartnell! , up till 2021 I struggled to remember their remainder formula.
-This post is my attempt to re-derive Taylor expansions and their error term in a way I can finally remember.</description></item><item><title/><link>https://tonytwang.net/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tonytwang.net/about/</guid><description>About this site This site is built using Hugo and its style is adapted from XMin. It runs off of Github Pages. You can find its git repo here.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>t. TW</title><link>https://tonytwang.net/</link><description>Recent content on t. TW</description><generator>Hugo</generator><language>en-us</language><lastBuildDate>Fri, 02 Jul 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tonytwang.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Taylor expansions: An easy derivation</title><link>https://tonytwang.net/writing/taylor-expansions/</link><pubDate>Sun, 10 Jan 2021 00:00:00 +0000</pubDate><guid>https://tonytwang.net/writing/taylor-expansions/</guid><description>&lt;h1 id="introduction"&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;Recently I had to bound the error in a Taylor expansion.
+However, I forgot the form of the error term and had to look it up.
+This was not the first time I&amp;rsquo;ve had to look it up.
+In fact, though I first learned about Taylor expansions in 2014&lt;span class="sidenote"&gt;&lt;sup&gt;&lt;label class="sidenote-label" for="sidenote-2"&gt;2&lt;/label&gt;&lt;/sup&gt;&lt;input class="sidenote-checkbox" type="checkbox" id="sidenote-2"&gt;&lt;/input&gt;&lt;span class="sidenote-content"&gt;
+ &lt;sup class="sidenote-label"&gt;2&lt;/sup&gt;
+ 
+ Shoutout to Ms. Dartnell!
+
+ &lt;/span&gt;&lt;/span&gt;,
+up till 2021 I struggled to remember their remainder formula.&lt;/p&gt;
+&lt;p&gt;This post is my attempt to
+re-derive Taylor expansions and their error term
+in a way I can finally remember.&lt;/p&gt;</description></item><item><title/><link>https://tonytwang.net/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://tonytwang.net/about/</guid><description>&lt;h3 id="about-this-site"&gt;About this site&lt;/h3&gt;
+&lt;p&gt;This site is built using Hugo
+and its style is adapted from &lt;a href="https://archive.is/wip/zUOOu" target="_blank" &gt;XMin&lt;/a&gt;.
+It runs off of Github Pages.
+You can find its git repo &lt;a href="https://github.com/ed1d1a8d/personal-website/" target="_blank" &gt;here&lt;/a&gt;.&lt;/p&gt;</description></item></channel></rss>
