@@ -18,7 +18,7 @@ At the moment, I'm focusing on robustness in the vision domain as a stepping sto
 
 In the language domain, the question that interests me the most is this one: Given a natural language specification for how an AI system should behave, how can we build capable systems that robustly satisfy the specification? Ideas related to this question that interest me include [model specs](https://openai.com/index/introducing-the-model-spec/), scalable oversight, [relaxed adversarial training](https://www.alignmentforum.org/posts/atBQ3NHyqnBadrsGP/latent-adversarial-training), [representation engineering](https://arxiv.org/abs/2406.04313), [stateful defenses against adversaries](https://arxiv.org/abs/1907.05587), and [AI control](https://arxiv.org/abs/2312.06942).
 
-Finally, a new topic I have been exploring recently is the ability of AI systems to introspect on their own cognition. More to come on this soon.
+Finally, a new topic I have been exploring recently is training AI systems to introspect on their own cognition. See [this blogpost](https://www.lesswrong.com/posts/EKhTrhrCz2rNg7FmG/) for some thoughts.
 
 ### Contact
 
@@ -29,3 +29,5 @@ Some links:
 [Twitter](https://twitter.com/TonyWangIV),
 [Google Scholar](https://scholar.google.com/citations?user=YWiob00AAAAJ),
 [CV](docs/tony-wang-cv.pdf).
+
+This page last updated: 2025-10-24.
